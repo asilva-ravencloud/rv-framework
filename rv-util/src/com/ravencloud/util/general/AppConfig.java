@@ -62,4 +62,7 @@ public interface AppConfig extends Config {
 	
 	@Key("catalina.home")
 	String catalinaHome();
+	
+	@Key("catalina.developersHome")
+	String developersCatalinaHome();
 }

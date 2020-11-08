@@ -94,6 +94,7 @@
 									<artifactId>rv-tomcat</artifactId>
 									<version>${tomcat.version}</version>
 									<outputDirectory>${project.build.directory}/tomcat</outputDirectory>
+									<destFileName>tomcat.jar</destFileName>
 								</artifactItem>
 							</artifactItems>
 						</configuration>
@@ -179,6 +180,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>${maven.war.version}</version>
 				<configuration>
+				 	<warName>ROOT</warName>
 					<webappDirectory>${project.build.directory}/webapps</webappDirectory>
 					<warSourceDirectory>web</warSourceDirectory>
 					<webResources combine.children="append">
